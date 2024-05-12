@@ -1,0 +1,18 @@
+<div fxLayout="col rap" fxLayoutGap="16px" class="shop_container" >
+  <mat-card fxFlex.lg="calc(33% - 16px)" fxFlex.lt-lg="calc(50% - 16px)" fxFlex.xs="calc(100% - 16px)" class="card" *ngFor="let swimsuit of swimsuits;">
+    <mat-card-title class="card-title">{{swimsuit.name}}</mat-card-title>
+    <mat-card-content>
+      <div class="img-holder">
+        <img matCardImage  [src]="swimsuit.image">
+      </div>
+      <div class="details-holder">
+        <p>{{swimsuit.details}}</p>
+      </div>
+      <p class="price">{{swimsuit.price | currencyPipe}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a class="buy" mat-button color="primary">Vásárol</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

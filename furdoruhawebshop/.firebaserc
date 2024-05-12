@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "furdoruhaweb": {
+      "hosting": {
+        "furdoruhawebshop": [
+          "summer-body"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "furdoruhaweb"
+  }
+}

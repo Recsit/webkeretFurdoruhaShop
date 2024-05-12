@@ -1,0 +1,21 @@
+<div class="full">
+  <p class="title">Bejelentkezés</p>
+
+  <div class="div-flex">
+    <mat-form-field>
+      <mat-label for="email">
+        Email
+      </mat-label>
+      <input matInput required id="email" type="text" [formControl]="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="password">
+        Jelszó
+      </mat-label>
+      <input matInput required id="password" type="password" [formControl]="password">
+    </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login()">Bejelentkezés</button>
+      <button mat-raised-button color="primary" [routerLink]="'/register'">Regisztráció</button>
+  </div>
+
+</div>
